@@ -6,7 +6,7 @@ interface HamburgerProps {
 
 function Hamburger({ onClick, isOpen }: HamburgerProps) {
   return (
-    <div className={`pl-5 pt-5 z-5 ${isOpen ? "bg-violet-200" : ""}`}>
+    <div className={`pl-5 pt-5 z-5 ml-5 ${isOpen ? "bg-violet-200" : ""}`}>
       <button className="relative group" onClick={onClick}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-blue-100 ring-0 ring-blue-200 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
           <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">

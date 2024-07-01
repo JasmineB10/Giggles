@@ -12,7 +12,7 @@ function NavBar() {
   };
   //REPETITION
   const afterMediumBreakpoint = useMediaQuery({ query: "(min-width: 768px)" });
-  if(afterMediumBreakpoint)
+  if(afterMediumBreakpoint){
   return (
     <div className="grid grid-rows-12 z-10 fixed top-0 w-full h-screen">
     
@@ -20,8 +20,9 @@ function NavBar() {
       <HomeOptionsTab/>    
       </div>
   )
+}
   return(
-    <div className="grid grid-rows-12 w-48 h-screen">
+    <div className="grid grid-rows-12 w-48 fixed h-screen">
       <Hamburger onClick={handleHamburgerClick} isOpen={isNavbarOpen} />
       {isNavbarOpen && <NavBarBtnTab/>}
     </div>

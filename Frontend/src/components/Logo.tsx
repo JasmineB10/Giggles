@@ -1,7 +1,7 @@
 // Logo.jsx
 function Logo() {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-screen w-full">
       {/* Original image */}
       <img src="ggg.webp" className="w-full h-full object-fill" />
 
